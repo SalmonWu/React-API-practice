@@ -1,0 +1,89 @@
+@charset "utf-8";
+
+@import "compass";
+@import "breakpoint";
+@import "susy";
+
+@import "variable";
+@import "extend";
+@import "mixin";
+
+//===== PC版 =====
+
+.indexNav {
+    font-size: 0;
+    // clear: both;
+    padding: 25px 23px 25px 65px;
+
+    .logo {
+        display: inline-block;
+        vertical-align: middle;
+        max-width: 206px;
+        width: 100%;
+
+        figure {
+            width: 100%;
+
+        }
+    }
+
+    .meunGroup {
+        display: inline-block;
+        vertical-align: middle;
+        max-width: calc(100% - 206px);
+        width: 100%;
+        text-align: right;
+
+        li {
+            // max-width: calc(580px / 5);
+            display: inline-block;
+            vertical-align: middle;
+            // width: 100%;
+            height: 90px;
+            text-align: center;
+            line-height: 90px;
+            padding: 0 18px;
+
+            &:last-child {
+                padding: 0;
+
+                a {
+                    &:hover {
+                        // border-bottom: 3px solid transparent;
+                    }
+                }
+            }
+
+            a {
+                display: inline-block;
+                font-size: 18px;
+                color: #3e3a39; //行程頁
+                // color: #ffffff; //首頁
+                // border-bottom: 3px solid transparent;
+                padding: 33px 0;
+
+                &:hover {
+                    // border-bottom: 3px solid #898989;
+                }
+            }
+
+            .meunFb {
+                padding: 20px 12px;
+            }
+
+            .meunLine {
+                padding: 20px 12px;
+            }
+        }
+    }
+}
+
+
+
+//===== RWD變版 =====
+
+//Pad 專用
+@include breakpoint(max-width 980px) {}
+
+//Phone 專用
+@include breakpoint(max-width 720px) {}
