@@ -1,0 +1,466 @@
+@charset "utf-8";
+
+@import "reset";
+
+@import "compass";
+@import "breakpoint";
+@import "susy";
+
+@import "variable";
+@import "extend";
+@import "mixin";
+
+html {
+    // 專門處理IOS旋轉問題
+    -webkit-text-size-adjust: 100%;
+
+    *,
+    *:before,
+    *:after {
+        //@include user-select(none);
+        @include adjust-font-size-to($base-font-size);
+        color: $darkColor;
+        font-family: "Century Gothic", "Microsoft JhengHei", "Apple LiGothic Medium", "PMingLiU", "sans-serif", "serif";
+        //verdana
+    }
+}
+
+* {
+    @include box-sizing(border-box);
+}
+
+a {
+    text-decoration: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    min-width: $mainWidth;
+}
+
+//===== PC版 =====
+.hide {
+    display: none;
+}
+
+.mylayout {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+//nav
+.indexNav {
+    font-size: 0;
+    // padding: 15px 20px 12px 65px;
+    padding: 0px 20px 0px 65px;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    z-index: 15;
+    width: 100%;
+    transition: .3s;
+    background-color: #fff;
+
+    .logo {
+        display: inline-block;
+        vertical-align: middle;
+        // max-width: 206px;
+        // width: 100%;
+
+
+        figure {
+            background-image: url('../images/logo_top_footer.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 206px;
+            max-width: 100%;
+            padding-top: 30%;
+
+            // img {
+            //     width: 100%;
+            //     height: 100%;
+            // }
+        }
+    }
+
+    .meunGroup {
+        display: inline-block;
+        vertical-align: middle;
+        max-width: calc(100% - 206px);
+        width: 100%;
+        text-align: right;
+
+        li {
+            // max-width: calc(580px / 5);
+            display: inline-block;
+            vertical-align: middle;
+            // width: 100%;
+            height: 90px;
+            text-align: center;
+            line-height: 90px;
+            padding: 0 18px;
+
+
+            &:last-child {
+                padding: 0;
+            }
+
+            a {
+                display: inline-block;
+                font-size: 18px;
+                color: #3e3a39; //行程頁
+                // color: #ffffff; //首頁
+                padding: 33px 0;
+
+                &:hover {
+                    border-bottom: 3px solid #898989;
+                }
+
+            }
+
+            .meunFb {
+                padding: 0;
+                margin: 17px 12px;
+                width: 50px;
+                height: 50px;
+                background-image: url("../images/meunFb_hover.png");
+                background-size: cover;
+                background-position: top;
+                background-repeat: no-repeat;
+
+                &:hover {
+                    border-bottom: 3px solid transparent;
+                }
+
+            }
+
+            .meunLine {
+                padding: 0;
+                margin: 17px 12px;
+                width: 50px;
+                height: 50px;
+                background-image: url("../images/meunLine_hover.png");
+                background-size: cover;
+                background-position: top;
+                background-repeat: no-repeat;
+
+                &:hover {
+                    border-bottom: 3px solid transparent;
+                }
+
+            }
+        }
+    }
+}
+
+//meun
+.active {
+    .menuBtn {
+        background: transparent;
+        box-shadow: -3px 0px 1px transparent;
+
+        &:before {
+            @include transform(translateY(14px) rotate(45deg));
+            margin: -4px auto;
+            background-color: #3e3a39;
+        }
+
+        &:after {
+            @include transform(translateY(-8px) rotate(-45deg));
+            margin: 8px auto;
+            background-color: #3e3a39;
+        }
+
+        span {
+            background: transparent;
+            height: 7px;
+        }
+    }
+}
+
+.menuBtn {
+    transition: 0.3s all;
+    display: none;
+    position: absolute;
+    padding: 7px 0;
+    top: 23px;
+    right: 10px;
+    width: 45px;
+    height: 35px;
+    z-index: 100;
+
+    &:before {
+        transition: 0.3s all;
+        content: "";
+        display: block;
+        border-radius: 20px;
+        height: 4px;
+        width: 74%;
+        margin: 0 auto;
+        background-color: #3e3a39;
+    }
+
+    &:after {
+        transition: 0.3s all;
+        content: "";
+        display: block;
+        border-radius: 20px;
+        height: 4px;
+        width: 74%;
+        margin: 0 auto;
+        background-color: #3e3a39;
+    }
+
+    span {
+        display: block;
+        border-radius: 20px;
+        height: 4px;
+        width: 74%;
+        margin: 6px auto;
+        background-color: #3e3a39;
+    }
+}
+
+
+//gotop
+.gotop {
+    z-index: 5;
+    max-width: 66px;
+    max-height: 66px;
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+    transition: 0.3s;
+    position: fixed;
+    bottom: 55px;
+    right: 20px;
+
+    &.show {
+        // display: block;
+        visibility: visible;
+        transition: 0.3s;
+    }
+
+    figure {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+    }
+}
+
+//footer
+.footer_content {
+    text-align: center;
+
+    .footer_logo {
+        // height: 187px;
+        width: 100%;
+        border-bottom: 1px solid #e5e5e5;
+        background-color: #fff;
+        padding: 25px 0;
+        display: block;
+
+        img {
+            display: inline-block;
+            max-width: 206px;
+            width: 100%;
+        }
+    }
+
+    p {
+        background-color: #ffffff;
+        padding: 30px 0;
+        font-size: 15px;
+        letter-spacing: 1px;
+        color: #5d5d5d;
+    }
+}
+
+
+//===== RWD變版 =====
+
+//非 IE8 專用
+@include breakpoint(0px) {
+
+    html,
+    body {
+        min-width: 320px
+    }
+
+}
+
+
+//Pad 專用
+@include breakpoint(max-width 980px) {
+    .gotop {
+        max-width: 45px;
+        max-height: 45px;
+    }
+
+    //meun
+    .menuBtn {
+        display: block;
+        width: 40px;
+        height: 40px;
+        padding: 8px 5px;
+        border-radius: 50%;
+        position: fixed;
+        // border: 1px solid #5fdacc;
+        // background: #fff;
+
+    }
+
+    .indexNav {
+        padding: 15px 20px;
+
+        // &:hover {
+        //     background-color: #fff;
+        // }
+
+        .logo {
+            display: inline-block;
+            vertical-align: middle;
+            // max-width: 206px;
+            // width: 100%;
+
+
+            figure {
+                background-image: url('../images/logo_top_footer.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                // width: 206px;
+                width: 150px;
+                max-width: 100%;
+                padding-top: 30.6%;
+
+                // img {
+                //     width: 100%;
+                //     height: 100%;
+                // }
+            }
+        }
+
+
+        .meunGroup {
+            opacity: 0;
+            display: block;
+            max-width: 100%;
+            background-color: #fff;
+            position: absolute;
+            top: 20px;
+            left: 0;
+            padding: 30px;
+            z-index: 5;
+            // transition: .3s;
+
+            li {
+                display: block;
+
+                a {
+                    display: block;
+                    color: #3e3a39;
+
+                    &:hover {
+                        border-bottom: 3px solid transparent;
+                    }
+                }
+
+                .meunFb {
+                    background-image: url("../images/meunFb_hover.png");
+                    display: inline-block;
+                    margin: 17px 25px;
+
+                }
+
+                .meunLine {
+                    background-image: url("../images/meunLine_hover.png");
+                    display: inline-block;
+                    margin: 17px 25px;
+
+                }
+            }
+        }
+    }
+
+    .active {
+        .indexNav {
+            background-color: #ffffff;
+            transition: .3s;
+
+            .meunGroup {
+                opacity: 1;
+                display: block;
+                max-width: 100%;
+                background-color: #fff;
+                position: fixed;
+                top: 0px;
+                left: 0;
+                padding: 90px 0 30px;
+                transition: .3s;
+
+                li {
+                    display: block;
+
+                    a {
+                        display: block;
+                        color: #3e3a39;
+                    }
+
+                    .meunFb {
+                        background-image: url("../images/meunFb_hover.png");
+                        display: inline-block;
+                        margin: 17px 25px;
+
+                    }
+
+                    .meunLine {
+                        background-image: url("../images/meunLine_hover.png");
+                        display: inline-block;
+                        margin: 17px 25px;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Phone 專用
+@include breakpoint(max-width 720px) {}
+
+
+
+
+// ===== 雄獅天地的fix css =====
+
+// body{
+//     padding-top: 35px;
+// }
+
+
+// #lionhead,#lionfooter{
+//     *{
+//         font-size: 12px !important;
+//     }
+// }
+
+
+// @include breakpoint(max-width 980px) {
+//     body{
+//         padding-top: 0 !important;
+//     }
+//     #lionhead,#lionfooter{
+//         display: none;
+//     }
+// }
