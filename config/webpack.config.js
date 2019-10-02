@@ -313,7 +313,7 @@ module.exports = function (webpackEnv) {
               loader: require.resolve('url-loader'),
               options: {
                 limit: 10000,
-                name: 'static/image/[name].[hash:8].[ext]',
+                name: 'static/images/[name].[hash:8].[ext]',
               },
             },
             // Process application JS with Babel.
@@ -450,7 +450,7 @@ module.exports = function (webpackEnv) {
               // by webpacks internal loaders.
               exclude: [/\.(js|mjs|jsx|ts|tsx)$/, /\.html$/, /\.json$/],
               options: {
-                name: 'static/image/[name].[hash:8].[ext]'
+                name: 'static/images/[name].[hash:8].[ext]'
               },
             },
             // ** STOP ** Are you adding a new loader?

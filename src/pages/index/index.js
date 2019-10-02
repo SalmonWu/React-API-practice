@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import '~/sass/layout.sass'
-import '~/sass/itinerary.sass'
 const $ = window.jQuery = require('jquery')
 
 class Index extends Component {
@@ -12,7 +10,7 @@ class Index extends Component {
         return (
             <div className="Index">
                 <h1>Webpack test index</h1>
-                <img src={require("~/image/logo.png")} alt='123'></img>
+                <img src={require("~/images/logo.png")} alt='123'></img>
                 <select data-placeholder="Choose a country..."
                     className="chosen-select">
                     <option>1</option>
