@@ -1,14 +1,15 @@
+
 .App {
   font-family: sans-serif;
   text-align: center;
- 
 }
-ul,li{
+*{
   margin: 0px;
   padding: 0px;
+  font-family: "Century Gothic", "Microsoft JhengHei", "Apple LiGothic Medium", "PMingLiU", "sans-serif", "serif";
 }
 #header{
-  >footer{
+  footer{
     float: left;
     background-size: cover;
     background-repeat: no-repeat;
@@ -16,7 +17,63 @@ ul,li{
     width: 100%;
     max-width: 100%;
     margin-top: 15px;
+    position: relative;
+    text-align: center;
+    >div{
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 0px;
+      text-align: center;
+      margin-top: -57px;
+    }
+    h3{
+      width: 100%;
+      font-size: 42px;
+      letter-spacing: 6px;
+      line-height: 45px;
+      color: #ffffff;
+      font-weight: bold;
+      float: left;
+      margin:15px 0px 5px;
+    }
+    p{
+      width: 100%;
+      float: left;
+      font-size: 20px;
+      letter-spacing: 10px;
+      line-height: 35px;
+      color: #ffffff;
+      text-shadow: 2px 2px 5px #000;
+    }
   }
+  @media (min-width: 720px) {
+    >footer{
+      p{
+        letter-spacing: 20px;
+      }
+    }
+  }
+  @media (min-width: 980px) {
+    >footer{
+      >div{
+        margin-top: -84px;
+      }
+      h3{
+        font-size: 60px;
+        letter-spacing: 6px;
+        line-height: 86px;
+        margin:15px 0px 5px;
+      }
+      p{       
+        font-size: 26px;
+        line-height: 30px;
+        letter-spacing: 36px;
+      }
+    }
+  }
+  
+
 }
 .header_contnet{
   width: 100%;
@@ -31,8 +88,8 @@ ul,li{
   }
   nav{
     width: calc(100% - 300px);
-    display: inline-block;
     vertical-align: middle;
+    display: none;
     ul{
       width: 100%;
       display: inline-block;
@@ -46,6 +103,46 @@ ul,li{
       box-sizing: border-box;
     }
   }
+  @media (min-width: 980px) {
+    nav{
+      display: inline-block;
+    }
+  }
+}
+
+.btnmenu{
+  position: absolute;
+  right: 10px;
+  top:10px;
+  width: 45px;
+  height: 45px;
+    span{
+      display: inline-block;
+      width: 90%;
+      height: 5px;
+      background-color: #b7b7b7;
+      position: relative;
+      &:before,&:after{
+        content:"";
+        display: block;
+        width: 100%;
+        height: 5px;
+        background-color: #b7b7b7;
+        margin: 10px auto -4px;
+      }
+
+    }
+    &.active{
+      span{
+        &:before{
+          display: none;
+        }
+      }
+    }
+  @media (min-width: 980px) {
+    display: none;
+
+  }
 }
 
 main{
@@ -56,6 +153,176 @@ main{
    max-width: 1200px;
    width: 100%;
    display: inline-block;
+   clear: both;
   //  border: 1px solid;
- 
+}
+.title_area{
+  width: 100%;
+  float: left;
+  p{
+    width: 100%;
+    float: left;
+    font-size: 24px;
+    line-height: 40px;
+    color: #000000;
+    padding: 55px 0px 22px;
+    &:after{
+      content:"";
+      display: block;
+      margin: 30px auto auto;
+      width: 95px;
+      height: 1px;
+      background-color: #000;
+    }
+  }
+  @media (min-width: 980px) {
+    p{
+      font-size: 32px;
+      line-height: 50px;
+      margin:55px 0px 22px;
+      &:after{
+        margin: 40px auto auto;
+      }
+    }
+  }
+}
+.list_view{
+  width: 100%;
+  float: left;
+  margin-top: 100px;
+  >header{
+    width: 100%;
+    float: left;
+    font-size: 30px;
+    line-height: 86px;
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+  }
+  >div,ul{
+    width: 100%;
+    list-style-type: none;
+  }
+  >footer{
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+    >a{
+      width: 350px;
+      display: inline-block;
+      padding: 10px;
+      border:1px solid;
+      text-decoration: none;
+      &.dn{
+        display: none;
+      }
+    }
+  }
+  li{
+    width: calc( 100% - 20px);
+    float: left;
+    margin:10px;
+    box-sizing: border-box;
+    text-align: left;
+    border-bottom: 1px solid #ccc;
+    >figure{
+      width: 100%;
+      float: left;
+      padding-top: 52.89%;
+      background-size: cover;
+      background-position:  center;
+    }
+    >div{
+      width: 100%;
+      float: left;
+      header,>div,footer{
+        width: 100%;
+        float: left;
+      }
+      header{
+        font-size: 20px;
+        padding: 25px 15px 11px;
+        color: #000000;
+        font-weight: bold;
+      }
+      >div{
+        margin: 11px 15px 20px;
+        font-size: 17px;
+        line-height: 23px;
+        height: 46px;
+      }
+      footer{
+        text-align: right;
+        p{
+          display: inline-block;
+          font-size: 30px;
+          line-height: 39px;
+          color: #e83828;
+          font-family: "Arial";
+          font-weight: bold;
+          font-style: italic;
+          padding: 25px 30px 0 0;
+          &:before{
+            content:"$";
+            display: inline-block;
+            vertical-align: middle;
+            color: #e83828;
+            margin-top: -5px;
+          }
+          &:after{
+            content:"起";
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 15px;
+            line-height: 39px;
+            color: #e83828;
+            font-family: "Arial";
+            font-weight: bold;
+            font-style: normal;
+          }
+        }
+       
+      }
+    }
+  }
+  @media (min-width: 720px) {
+    li{
+      width: calc( 50% - 15px);
+      margin: 10px 10px 10px 5px;
+    }
+  }
+  @media (min-width: 980px) {
+    li{
+      width: calc( 33.33% - 15px);
+    }
+  }
+}
+.Taoyuan{
+   &:before{
+    background: url('images/Taoyuan.png');
+   }
+}
+.Taichung{
+  &:before{
+    background: url('images/Taichung.png');
+  }
+}
+.Kaohsiung{
+  &:before{
+    background: url('images/Kaohsiung.png');
+  }
+}
+.Taoyuan,.Taichung,.Kaohsiung{
+  position: relative;
+  &:before{
+    content:"";
+    width: 100%;
+    height: 125px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    left: 0px;
+    top: -60px;
+    z-index: -1;
+  }
 }
