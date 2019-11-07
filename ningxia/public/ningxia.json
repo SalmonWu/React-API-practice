@@ -1,0 +1,406 @@
+{
+    "status": 200,
+    "msg": "資料取得成功",
+    "data": [
+        {
+            "id": 1,
+            "company": "喜鴻旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "29900",
+            "departure": "Taoyuan",
+            "status": true
+        },
+        {
+            "id": 2,
+            "company": "山富旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "19900",
+            "departure": "Kaohsiung",
+            "status": true
+        },
+        {
+            "id": 3,
+            "company": "超悠旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "19900",
+            "departure": "Taoyuan",
+            "status": true
+        },
+        {
+            "id": 4,
+            "company": "中安旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "19900",
+            "departure": "Taichung",
+            "status": true
+        },
+        {
+            "id": 5,
+            "company": "雄獅旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "19900",
+            "departure": "Taoyuan",
+            "status": true
+        },
+        {
+            "id": 6,
+            "company": "喜鴻旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "30900",
+            "departure": "Taoyuan",
+            "status": true
+        },
+        {
+            "id": 7,
+            "company": "中安旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "19900",
+            "departure": "Taichung",
+            "status": true
+        },
+        {
+            "id": 8,
+            "company": "喜鴻旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "45900",
+            "departure": "Taoyuan",
+            "status": true
+        },
+        {
+            "id": 9,
+            "company": "康福旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "19900",
+            "departure": "Kaohsiung",
+            "status": true
+        },
+        {
+            "id": 10,
+            "company": "雄獅旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "38800",
+            "departure": "Taoyuan",
+            "status": true
+        },
+        {
+            "id": 11,
+            "company": "喜鴻旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "29900",
+            "departure": "Taoyuan",
+            "status": true
+        },
+        {
+            "id": 12,
+            "company": "喜鴻旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "19900",
+            "departure": "Taoyuan",
+            "status": true
+        },
+        {
+            "id": 13,
+            "company": "喜鴻旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "19900",
+            "departure": "Taoyuan",
+            "status": true
+        },
+        {
+            "id": 14,
+            "company": "喜鴻旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "19900",
+            "departure": "Taoyuan",
+            "status": true
+        },
+        {
+            "id": 15,
+            "company": "喜鴻旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "19900",
+            "departure": "Kaohsiung",
+            "status": true
+        },
+        {
+            "id": 16,
+            "company": "喜鴻旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "19900",
+            "departure": "Taichung",
+            "status": true
+        },
+        {
+            "id": 17,
+            "company": "康福旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "19900",
+            "departure": "Kaohsiung",
+            "status": true
+        },
+        {
+            "id": 18,
+            "company": "雄獅旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "38800",
+            "departure": "Taoyuan",
+            "status": true
+        },
+        {
+            "id": 19,
+            "company": "喜鴻旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "29900",
+            "departure": "Taoyuan",
+            "status": true
+        },
+        {
+            "id": 20,
+            "company": "喜鴻旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "19900",
+            "departure": "Taoyuan",
+            "status": true
+        },
+        {
+            "id": 21,
+            "company": "喜鴻旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "19900",
+            "departure": "Taoyuan",
+            "status": true
+        },
+        {
+            "id": 22,
+            "company": "喜鴻旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "19900",
+            "departure": "Taoyuan",
+            "status": true
+        },
+        {
+            "id": 23,
+            "company": "喜鴻旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "19900",
+            "departure": "Kaohsiung",
+            "status": true
+        },
+        {
+            "id": 24,
+            "company": "喜鴻旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "19900",
+            "departure": "Taichung",
+            "status": true
+        },
+        {
+            "id": 25,
+            "company": "康福旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "19900",
+            "departure": "Kaohsiung",
+            "status": true
+        },
+        {
+            "id": 26,
+            "company": "雄獅旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "38800",
+            "departure": "Taoyuan",
+            "status": true
+        },
+        {
+            "id": 27,
+            "company": "喜鴻旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "29900",
+            "departure": "Taoyuan",
+            "status": true
+        },
+        {
+            "id": 28,
+            "company": "中安旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "19900",
+            "departure": "Taoyuan",
+            "status": true
+        },
+        {
+            "id": 29,
+            "company": "喜鴻旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "49900",
+            "departure": "Taoyuan",
+            "status": true
+        },
+        {
+            "id": 30,
+            "company": "超悠旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "19900",
+            "departure": "Taoyuan",
+            "status": true
+        },
+        {
+            "id": 31,
+            "company": "喜鴻旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "19700",
+            "departure": "Kaohsiung",
+            "status": true
+        },
+        {
+            "id": 32,
+            "company": "喜鴻旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "19900",
+            "departure": "Taichung",
+            "status": true
+        },
+        {
+            "id": 33,
+            "company": "喜鴻旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "59900",
+            "departure": "Taichung",
+            "status": true
+        },
+        {
+            "id": 34,
+            "company": "喜鴻旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "19900",
+            "departure": "Taoyuan",
+            "status": true
+        },
+        {
+            "id": 35,
+            "company": "喜鴻旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "19900",
+            "departure": "Taoyuan",
+            "status": true
+        },
+        {
+            "id": 36,
+            "company": "喜鴻旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "19900",
+            "departure": "Kaohsiung",
+            "status": true
+        },
+        {
+            "id": 37,
+            "company": "喜鴻旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "19900",
+            "departure": "Taichung",
+            "status": true
+        },
+        {
+            "id": 38,
+            "company": "康福旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "19900",
+            "departure": "Kaohsiung",
+            "status": true
+        },
+        {
+            "id": 39,
+            "company": "雄獅旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "38800",
+            "departure": "Taoyuan",
+            "status": true
+        },
+        {
+            "id": 40,
+            "company": "喜鴻旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "29900",
+            "departure": "Taoyuan",
+            "status": true
+        },
+        {
+            "id": 41,
+            "company": "中安旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "19900",
+            "departure": "Taoyuan",
+            "status": true
+        },
+        {
+            "id": 42,
+            "company": "喜鴻旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "49900",
+            "departure": "Taoyuan",
+            "status": true
+        },
+        {
+            "id": 43,
+            "company": "超悠旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "19900",
+            "departure": "Taoyuan",
+            "status": true
+        },
+        {
+            "id": 44,
+            "company": "喜鴻旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "19700",
+            "departure": "Kaohsiung",
+            "status": true
+        },
+        {
+            "id": 45,
+            "company": "喜鴻旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "19900",
+            "departure": "Taichung",
+            "status": true
+        },
+        {
+            "id": 46,
+            "company": "喜鴻旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "59900",
+            "departure": "Taichung",
+            "status": true
+        },
+        {
+            "id": 47,
+            "company": "超悠旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "19900",
+            "departure": "Taoyuan",
+            "status": true
+        },
+        {
+            "id": 48,
+            "company": "喜鴻旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "19700",
+            "departure": "Kaohsiung",
+            "status": true
+        },
+        {
+            "id": 49,
+            "company": "中安旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "19900",
+            "departure": "Taichung",
+            "status": true
+        },
+        {
+            "id": 50,
+            "company": "喜鴻旅行社",
+            "info": "寧夏之美~東方金字塔、沙坡頭、須彌山石窟、青銅峽、五★凱賓斯基八日[含稅]",
+            "price": "59900",
+            "departure": "Taichung",
+            "status": true
+        }
+    ]
+}
