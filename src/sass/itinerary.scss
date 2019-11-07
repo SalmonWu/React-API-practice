@@ -1,9 +1,11 @@
-@charset "utf-8";
-
 @import "breakpoint";
 @import "variable";
 
 //===== PC版 =====
+
+h1 {
+    font-size: 1rem;
+}
 
 .mylayout {
     width: 100%;
