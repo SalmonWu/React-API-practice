@@ -11,7 +11,7 @@ const Menu =() => {
             <ul>
                 <li>關於寧夏</li>
                 <li>景點TOP5</li>
-                <li>達人揭秘 </li>
+                <li>達人揭秘</li>
                 <li>行程推薦</li>
             </ul>
         </nav>

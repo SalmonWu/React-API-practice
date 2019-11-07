@@ -2,6 +2,11 @@
 .App {
   font-family: sans-serif;
   text-align: center;
+  &.active{
+    nav{
+      display: block;
+    }
+  }
 }
 *{
   margin: 0px;
@@ -87,9 +92,10 @@
     vertical-align: middle;
   }
   nav{
-    width: calc(100% - 300px);
+    width: 100%;
     vertical-align: middle;
     display: none;
+    padding: 10px 0px;
     ul{
       width: 100%;
       display: inline-block;
@@ -97,15 +103,21 @@
     }
     li{
       display: inline-block;
+      width: 100%;
       font-size: 18px;
       line-height: 25px;
       padding: 10px;
+      text-align: center;
       box-sizing: border-box;
     }
   }
   @media (min-width: 980px) {
     nav{
       display: inline-block;
+      width: calc(100% - 300px);
+      li{
+          width: auto;
+      }
     }
   }
 }
@@ -244,12 +256,14 @@ main{
         padding: 25px 15px 11px;
         color: #000000;
         font-weight: bold;
+        box-sizing: border-box;
       }
       >div{
-        margin: 11px 15px 20px;
+        padding: 11px 15px 20px;
         font-size: 17px;
         line-height: 23px;
         height: 46px;
+        box-sizing: border-box;
       }
       footer{
         text-align: right;
@@ -262,6 +276,7 @@ main{
           font-weight: bold;
           font-style: italic;
           padding: 25px 30px 0 0;
+          box-sizing: border-box;
           &:before{
             content:"$";
             display: inline-block;
@@ -324,5 +339,23 @@ main{
     left: 0px;
     top: -60px;
     z-index: -1;
+  }
+}
+
+.gotop{
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  opacity: 0;
+  &.view{
+    opacity: 1;
+  }
+  img{
+    width: 45px;
+  }
+  @media (min-width: 980px) {
+    img{
+      width: 60px;
+    }
   }
 }

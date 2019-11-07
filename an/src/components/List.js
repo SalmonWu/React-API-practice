@@ -65,6 +65,7 @@ class List extends React.Component {
             }
         })
     }
+   
 
     render(){
      const {Loadfirst,newdata,max,dn}=this.state;
@@ -162,8 +163,6 @@ class List extends React.Component {
                             </div>
                         </div>
                 </React.Fragment>
-                
-                
             )
         }else{
             return null;
