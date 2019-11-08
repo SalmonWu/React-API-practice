@@ -1,13 +1,13 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Menu from "./components/Menu";
+import Menu from "../../components/Menu";
 import imgUrl from "./images/itinerary_header.jpg";
-import "./styles.scss";
+import "../../sass/styles.scss";
 // import List from"./components/List";
-import List from"./components/List2";
-import Btnmenu from"./components/Btnmenu";
-import Data from"./data/ningxia.json";
-import Gotop from "./components/Gotop";
+import List from"./List2";
+import Btnmenu from"../../components/Btnmenu";
+import Data from"../../json/ningxia.json";
+import Gotop from "../../components/Gotop";
 
 
 let lastScrollY = 0;
