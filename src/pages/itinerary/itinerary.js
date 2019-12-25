@@ -1,18 +1,22 @@
 import React, { Component } from 'react';
 import Data from '../../json/ningxia.json'
+import gotop from '../../images/gotop.png'
 
 class itinerary extends Component {
     state = {
-        data: Data
+        data: Data,
+        img: {
+            gotop: gotop
+        }
     }
 
     render() {
-        console.log(this.state.data.msg)
+        console.log(this.state.data.msg, this.state.data[0])
         return (
             <div id="wrap">
 
                 <a className="gotop" href="javascript:;">
-                    <figure><img src="images/gotop.png"></img></figure>
+                    <figure><img src={this.state.img.gotop}></img></figure>
                 </a>
                 <nav className="indexNav">
                     <a href="" className="logo">
@@ -60,10 +64,10 @@ class itinerary extends Component {
                                         <figure></figure>
                                     </div>
                                     <div className="box_intro">
-                                        <p className="intro_p1">中安旅行社</p>
-                                        <p className="intro_p2">寧夏輕鬆GO～兩晚喜來登、黃河青銅峽、沙漠騎駱駝、須彌山石窟八日(含稅、無購物、無自費)
+                                        <p className="intro_p1">{this.state.data.company}</p>
+                                        <p className="intro_p2">{this.state.data.info}
                                         </p>
-                                        <p className="intro_p3">$19,900<span>起</span></p>
+                                        <p className="intro_p3">${this.state.data.price}<span>起</span></p>
                                     </div>
                                 </div>
                             </div>

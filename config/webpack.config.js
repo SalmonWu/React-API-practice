@@ -314,7 +314,9 @@ module.exports = function (webpackEnv) {
               loader: require.resolve('url-loader'),
               options: {
                 limit: 10000,
-                name: '../static/images/[name].[hash:8].[ext]',
+                name: isEnvProduction
+                  ? '../static/images/[name].[hash:8].[ext]'
+                  : isEnvDevelopment && 'static/images/[name].[hash:8].[ext]',
               },
             },
             // Process application JS with Babel.
